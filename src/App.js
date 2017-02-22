@@ -21,6 +21,7 @@ class App extends Component {
   render() {
     return (
       <div id='feed-container'> 
+        {this.state.actors.length === 0 ? <div className="loading"><div>Loading...</div></div> : null}
         {this.state.actors.map((actor) => <Actor actor={actor} key={actor.id} />)}
       </div>
     );

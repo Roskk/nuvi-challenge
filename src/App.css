@@ -33,7 +33,7 @@
   font-size: 24px;
   color: #000;
 }
-.activity-date{
+.activity-date {
   padding-right: 20px;
 }
 .activity-attachment {
@@ -92,4 +92,18 @@
 .heart-color:focus {
   fill: #ff7d7d;
   cursor: pointer;  
+}
+.loading {
+  margin: auto;
+  width: 100px;
+}
+.loading div{
+  font-size: 20px;
+  width: 72px;
+  overflow: hidden;
+  animation: loading 1s infinite;
+}
+@keyframes loading {
+    0%   {width: 72px;}
+    100% {width: 90px;}
 }
