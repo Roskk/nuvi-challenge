@@ -1,13 +1,10 @@
 #feed-container {
   max-width: 600px;
   padding-top: 60px;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   margin: 0 auto;
   width: 100%;
 }
-
 .post-container {
   background-color: #e8e8e8;
   border: 1px solid #d2d1d1;
@@ -29,7 +26,7 @@
   width: 55px;
   margin-left: 5px;
   border-radius: 50%;
-  background-color: #727388;
+  background-color: #e4e4e4;
 }
 .actor-username {
   text-decoration: none;
@@ -45,8 +42,9 @@
   position: relative;
 }
 .provider {
-  color: red;
+  color: #ff7d7d;
   text-align: left;
+  text-transform: capitalize;
   margin: 0px;
   width: 100%;
 }
@@ -59,11 +57,16 @@
 .post-message {
   padding: 15px 15px;
   margin: 0px;
+  line-height: 1.5;
 }
 .likes-comments {
   padding: 15px;
   display: flex;
   align-items: center;
+}
+.likes-comments svg {
+  padding-right: 10px;
+  overflow: visible;
 }
 .post-comment-container {
   display: flex;
@@ -86,7 +89,7 @@
 .like-count{
   flex-grow: 1;
 }
-.heart-color:hover {
-  fill: red;
-  cursor: pointer;
+.heart-color:focus {
+  fill: #ff7d7d;
+  cursor: pointer;  
 }

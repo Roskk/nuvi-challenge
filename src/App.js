@@ -18,7 +18,6 @@ class App extends Component {
 			});
    }
 
-
   render() {
     return (
       <div id='feed-container'> 
@@ -28,4 +27,4 @@ class App extends Component {
   } 
 }
 
-  export default App;
+export default App;
